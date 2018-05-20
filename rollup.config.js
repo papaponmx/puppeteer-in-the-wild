@@ -42,6 +42,6 @@ export default {
       ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
     }),
     (process.env.NODE_ENV === 'production' && uglify()),
-    multiEntry(),
+    multiEntry({ exports: false }),
   ],
 };
