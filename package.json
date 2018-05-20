@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "chalkboard": "^0.5.1",
     "puppeteer": "^1.4.0",
     "signale": "^1.0.1",
     "yargs": "^11.0.0"
