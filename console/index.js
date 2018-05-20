@@ -1,19 +1,25 @@
-import chalk from 'chalk';
-import signale from 'signale';
+const chalk = require('chalk');
+const signale = require('signale');
 
-export const point = (someString) => {
+const logPoint = (someString) => {
   console.log(chalk.bold.cyanBright(someString));
 };
 
-export const fail = (someString) => {
+const logFail = (someString) => {
   console.log(chalk.bold.magenta(fail));
 };
 
-
-export const logSuccess  ess = (string) => {
+const logSuccess = (string) => {
   signale.success(string);
-}
+};
 
-export const logDebug = (params) => {
+const logDebug = (params) => {
   signale.debug(params);
-}
+};
+
+module.exports = {
+  logPoint,
+  logFail,
+  logSuccess,
+  logDebug
+};
