@@ -6,3 +6,4 @@ This repo contains the code for a series of posts about how I automated tests in
 [posts folder](./posts/part_one.md)
 
 [Support this project](./support.md)
+git
