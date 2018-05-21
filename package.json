@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "chalkboard": "^0.5.1",
     "puppeteer": "^1.4.0",
     "signale": "^1.0.1",
     "yargs": "^11.0.0"
@@ -28,6 +27,7 @@
   },
   "scripts": {
     "babel-node": "babel-node -cl-presets=/*a*/ --ignore='foo|bar|baz'",
-    "yarn build": "NODE_ENV=production ./node_modules/.bin/rollup -c"
+    "build": "NODE_ENV=production ./node_modules/.bin/rollup -c",
+    "compare-images": "node ./scripts/compare-images"
   }
 }
