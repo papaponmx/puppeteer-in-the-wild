@@ -1,7 +1,7 @@
 // JSON with url with all opts and shit.
 const config =  {
-  url: 'http://zonaclub.mx/pet',
-  phoneNumber: '2212545697',
+  url: 'http://localhost:3000/',
+  phoneNumber: '123-456-7890',
   email: 'test@example.com',
   password: 'test1234',
 }

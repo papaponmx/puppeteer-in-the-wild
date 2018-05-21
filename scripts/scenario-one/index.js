@@ -5,20 +5,19 @@ const signale = require('signale');
 const config = require('./config');
 
 // 1. Open browser.
-signale.debug('Opening browser...');
 
-const testToRun = async (params) => {
-
-
-
-  console.log(JSON.stringify(config));
-
+const runTest = async (params) => {
+  signale.debug('Opening browser...');
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   const d = new Date();
-  const name = `SOME_INPUT_FROM_TESTING_SCRIPT_${d.getDate()}_${d.getHours()}h${d.getMinutes()}`;
+  const dateString = `${d.getDate()}_${d.getHours()}h${d.getMinutes()}`;
+  const userName = `USER_FROM_TESTING_SCRIPT_${dateString}`;
 
+  // 1. Go to the website;
   await signale.watch('Navigating to the site');
+  await page.goto(LOCAL_HOST_URL);
+
 
 
 
@@ -33,4 +32,4 @@ const testToRun = async (params) => {
 };
 
 
-testToRun();
+runTest();

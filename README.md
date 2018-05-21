@@ -1,7 +1,9 @@
-# What do I need to do?
-DOM ACTIONS
-1. Esperar a que cargue el número
-2. Ingresar el número
-3. Verificar el footer de Telcel
+# Puppeteer in the wild
+This repo contains the code for a series of posts about how I automated tests in my job. You can find the series on:
 
-CHECK URL
+ [Medium](https://medium.com/@papaponmx/front-end-development-automation-with-puppeteer-c7957a52efb7)
+[dev.to](https://dev.to/papaponmx/front-end-development-automation-with-puppeteer-part-1-2k9n)
+[posts folder](./posts/part_one.md)
+
+[Support this project](./support.md)
+git
